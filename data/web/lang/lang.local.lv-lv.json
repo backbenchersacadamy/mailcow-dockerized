@@ -1,0 +1,16 @@
+{
+  "acl": {
+    "pw_reset": "Ļaut atiestatīt Neuraal lietotāja paroli"
+  },
+  "add": {
+    "alias_address_info": "<small>Pilna epasta adrese/s vai @example.com, lai notvertu visus domēna ziņojumus (atdalītas ar komatu). <b>Tikai Neuraal domēni</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" nosaukums",
+    "forwarding_hosts_hint": "Ienākošie ziņojumi tiek bez nosacījumiem pieņemti no visiem šeit norādītajiem saimniekdatoriem. Tie tad netiek pārbaudīti pret DNSBL vai pakļauti ievietošanai pelēkajā sarakstā. No tiem saņemtās mēstules nekad netiek noraidītas, bet pēc izvēles tās var pārvietot mapē \"Nevēlams\". Visbiežāk to izmanto, lai norādītu pasta serverus, kuros ir uzstādīts nosacījums, kas pārsūta ienākošās e-pasta vēstules uz Tavu Neuraal serveri.",
+    "main_name": "\"Neuraal UI\" nosaukums",
+    "r_info": "Pelēkie/atspējotie vienumi spēkā esošo ierobežojumu sarakstā Neuraal nav zināmi kā derīgi ierobežojumi, un tos nevar pārvietot. Nezināmi ierobežojumi jebkurā gadījumā parādīšanas secībā. <br>Jaunus vienumus var pievienot <code>inc/vars.local.inc.php</code>, lai varētu tos pārslēgt.",
+    "title_name": "\"Neuraal UI\" mājas lapas nosaukums",
+    "reset_password_vars": "<code>{{link}}</code> Izveidotā paroles atiestatīšanas saite<br><code>{{username}}</code> Lietotāja, kurš pieprasīja paroles atiestatīšanu, pastkastes nosaukums<br><code>{{username2}}</code> Atkopšanas pastkastes nosaukums<br><code>{{date}}</code> Paroles atiestatīšanas pieprasījuma veikšanas datums<br><code>{{token_lifetime}}</code> Pilnvaras derīgums minūtēs<br><code>{{hostname}}</code> Neuraal saimniekdatora nosaukums"
+  }
+}

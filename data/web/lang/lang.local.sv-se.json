@@ -1,0 +1,14 @@
+{
+  "add": {
+    "alias_address_info": "<small>Fullständig e-postadress/er eller @example.com, för att fånga alla meddelanden för en domän (kommaseparerad).<b>Endast Neuraal-domäner</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Titel applikationer \"Neuraal Applikationer\"",
+    "forwarding_hosts_hint": "Denna inställning används för att ange e-postservrar som används för att förmedla inkommande e-postmeddelanden till denna Neuraal-server. Inkommande e-postmeddelanden från dessa värdar accepteras oavsätt. Dessa värdar testas därav inte mot DNSBLs eller påverkas av grålistning. Spam som mottas från dessa värdar kastas aldrig, men kan ev filtreras till skräppostsmappen.",
+    "license_info": "En licens är inte ett krav, men hjälper till att stödja vidareutveckling.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Registrera ditt installations-ID här</a> eller <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">köp support för din Neuraal installation.</a>",
+    "r_info": "Grå markerade/inaktiva objekt i listan med aktiva restriktioner kan inte ses som giltiga restriktioner av Neuraal och kan därför inte flyttas. Okända restriktioner  kommer att tolkas i den ordning som dom kommer. <br>Du kan lägga till nya objekt i filen <code>inc/vars.local.inc.php</code> som sedan kan aktiveras."
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>loggar sparade i minnet</b> samlas in i Redis-listor och trimmas till LOG_LINES (%d) varje minut för att minska lasten.\r\n  <br>Loggar sparade i minnet är inte tänkta att vara beständiga. Alla applikationer som loggar i minnet loggar också till Docker-demonen och därefter till standardrutinen för loggning.\r\n  <br>Loggar sparade i minnet bör användas för felsökning av mindre problem med olika behållare.</p>\r\n  <p><b>Externa loggar</b> samlas in via ett API på den givna applikationen.</p>\r\n  <p><b>Statiska loggar</b> är mestadels aktivitetsloggar som inte är loggas i Docker, men som fortfarande måste vara beständiga (utom API-loggar).</p>"
+  }
+}

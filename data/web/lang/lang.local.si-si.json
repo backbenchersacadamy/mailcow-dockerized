@@ -1,0 +1,32 @@
+{
+  "acl": {
+    "pw_reset": "Dovoli ponastavitev uporabniškega gesla Neuraal"
+  },
+  "add": {
+    "alias_address_info": "<small>Polni e-poštni naslov/i oziroma @example.com za zajem vseh sporočil domene (ločeno z vejico), <b>samo domene Neuraal</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Ime aplikacije v Neuraal",
+    "forwarding_hosts_hint": "Dohodna sporočila so brezpogojno sprejeta od katerih koli gostiteljev v tem seznamu. Ti gostitelji se ne bodo preverjali po DNSBL seznamih in ne bodo dodani v listo sivih. Prejeta neželena pošta s teh gostiteljev ni nikoli zavrnjena, opcijsko pa se lahko premakne v mapo neželene pošte. Najpogostejša uporaba za to je navedba poštnih strežnikov, iz katerih ste nastavili pravilo za posredovanje pošte na vaš Neuraal strežnik.",
+    "license_info": "Licenca ni zahtevana, a pomaga pri nadaljnjem razvoju. <br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"Naročilo SAL\">Registrirajte svoj GUID tukaj</a> ali <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Naročilo podpore\">Kupite podporo za svojo namestitev Neuraal.</a>",
+    "main_name": "Naziv \"Neuraal UI\"",
+    "r_info": "Sivi/onemogočeni elementi v seznamu aktivnih omejitev niso znane kot veljavne omejitve za Neuraal in ne morejo biti premaknjene. Neznane omejitve bodo kljub temu nastavljene po vrstnem redu pojavljanja. <br>Nove elemente lahko dodate v <code>inc/vars.local.inc.php</code> da jih lahko vklopite ali izklopite.",
+    "title_name": "Naziv spletnega mesta \"Neuraal UI\"",
+    "force_sso_text": "Če je konfiguriran zunanji ponudnik OIDC, ta možnost skrije privzete obrazce za prijavo v Neuraal in prikaže samo gumb za enotno prijavo",
+    "force_sso": "Onemogoči prijavo v Neuraal in prikaži samo enotno prijavo",
+    "iam_auth_flow_info": "Poleg toka avtorizacijske kode (standardni tok v Keycloaku), ki se uporablja za prijavo z enotno prijavo, Neuraal podpira tudi tok preverjanja pristnosti z neposrednimi poverilnicami. Tok Mailpassword poskuša preveriti uporabnikove poverilnice z uporabo REST API-ja Keycloak Admin. Neuraal pridobi zgoščeno geslo iz atributa <code>mailcow_password</code>, ki je preslikan v Keycloaku.",
+    "iam_extra_permission": "Za delovanje naslednjih nastavitev potrebuje odjemalec Neuraal v Keycloaku <code>Servisni račun</code> in dovoljenje za <code>ogled uporabnikov</code>.",
+    "reset_password_vars": "<code>{{link}}<code> Ustvarjena povezava za ponastavitev gesla<br><code>{{username}}<code> Ime nabiralnika uporabnika, ki je zahteval ponastavitev gesla<br><code>{{username2}}<code> Ime obnovitvenega nabiralnika<br><code>{{date}}<code> Datum zahteve za ponastavitev gesla<br><code>{{token_lifetime}}<code> Življenjska doba žetona v minutah<br><code>{{hostname}}<code> Ime gostitelja Neuraal"
+  },
+  "debug": {
+    "log_info": "<p>Dnevniki v pomnilniku Neuraal se zbirajo na seznamih Redis in vsako minuto skrajšajo na LOG_LINES (%d), da se zmanjša preobremenitev.\n  <br>Dnevniki v pomnilniku niso namenjeni trajnemu beleženju. Vse aplikacije, ki se beležijo v pomnilnik, se beležijo tudi v Dockerjev demon in s tem v privzeti gonilnik beleženja.</p>\n  </p>Vrsta dnevnika v pomnilniku se mora uporabljati za odpravljanje manjših težav s kontejnerji.</p>\n  <p><b>Zunanji dnevniki</b> se zbirajo prek API-ja dane aplikacije.</p>\n  <p><b>Statični dnevniki</b> so večinoma dnevniki dejavnosti, ki se ne beležijo v Dockerd, vendar morajo biti še vedno trajni (razen dnevnikov API-ja).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}    - Iz imena ovojnice, npr. za \"Neuraal &lt;moo@mailcow.tld&gt;\" vrne \"Neuraal\""
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Nazaj v Neuraal"
+  }
+}

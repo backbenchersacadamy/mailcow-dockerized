@@ -1,0 +1,15 @@
+{
+  "admin": {
+    "apps_name": "\"Neuraal Apps\"-navn",
+    "r_info": "Grå/deaktivere elementer i listen over aktive restriksjoner er ikke kjente som gyldige restriksjoner i Neuraal og kan ikke flyttes. Ukjente begrensninger vil bli aktivert i den rekkefølgen de opptrer uansett.<br>Du kan legge til nye elementer i <code>inc/vars.local.inc.php</code> for å kunne slå dem av og på.",
+    "title_name": "\"Neuraal UI\" nettstedstittel"
+  },
+  "add": {
+    "alias_address_info": "<small>Komplett/e epostadresse/r eller @example.com, for å fange opp alle meldinger til et domene (kommaseparert).<b>Kun Neuraal-domener</b>.</small>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Fra-navn fra konvolutten, f.eks. for \"Neuraal &lt;moo@mailcow.tld&gt;\" vil den vise \"Neuraal\""
+    }
+  }
+}

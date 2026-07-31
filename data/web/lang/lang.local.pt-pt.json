@@ -1,0 +1,5 @@
+{
+  "admin": {
+    "r_info": "Greyed out/disabled elements on the list of active restrictions are not known as valid restrictions to Neuraal and cannot be moved. Unknown restrictions will be set in order of appearance anyway. <br>You can add new elements in <code>inc/vars.local.inc.php</code> to be able to toggle them."
+  }
+}

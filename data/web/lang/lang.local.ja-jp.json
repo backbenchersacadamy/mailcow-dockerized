@@ -1,0 +1,28 @@
+{
+  "acl": {
+    "pw_reset": "Neuraalユーザーパスワードのリセットを許可"
+  },
+  "add": {
+    "alias_address_info": "<small>完全なメールアドレスまたは@example.com（ドメインのすべてのメッセージをキャッチ、カンマ区切り）。<b>Neuraalドメインのみ対応</b>。</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal アプリ\" の名前",
+    "forwarding_hosts_hint": "ここにリストされたホストからのメッセージは無条件に受け入れられます。これらのホストは、DNSBL（ブラックリスト）やグレイリスティングのチェック対象外となります。これらのホストから受信したスパムは拒否されませんが、オプションで迷惑メールフォルダーに振り分けることができます。最も一般的な使用例は、受信メールをNeuraalサーバーに転送するように設定したメールサーバーを指定することです。",
+    "license_info": "ライセンスは必須ではありませんが、さらなる開発を支援します。<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">こちらでGUIDを登録</a>するか、<a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">Neuraalインストールのサポートを購入</a>してください。",
+    "main_name": "\"Neuraal UI\" 名称",
+    "r_info": "アクティブな制限リストでグレーアウトまたは無効化された要素は、Neuraalで有効な制限として認識されていませんが、リストの順序に従って設定されます。<br>新しい要素を<code>inc/vars.local.inc.php</code>に追加することで切り替え可能にできます。",
+    "reset_password_vars": "<code>{{link}}</code> 生成されたパスワードリセットリンク<br><code>{{username}}</code> パスワードリセットをリクエストしたユーザーのメールボックス名<br><code>{{username2}}</code> リカバリーメールボックス名<br><code>{{date}}</code> パスワードリセットリクエストが行われた日付<br><code>{{token_lifetime}}</code> トークンの有効期間（分）<br><code>{{hostname}}</code> Neuraalのホスト名",
+    "title_name": "\"Neuraal UI\" サイトのタイトル"
+  },
+  "debug": {
+    "log_info": "<p>Neuraalの<b>インメモリーログ</b>はRedisリストに収集され、ハンマリングを軽減するために1分ごとにLOG_LINES (%d)にトリムされます。\r\n  <br>インメモリーログは永続化を目的としたものではありません。インメモリーログを記録するすべてのアプリケーションは、Dockerデーモンとデフォルトのログドライバーにもログを記録します。\r\n  <br>インメモリーログタイプは、コンテナの軽微な問題をデバッグするために使用してください。</p>\r\n  <p><b>外部ログ</b>は指定されたアプリケーションのAPIを介して収集されます。</p>\r\n  <p><b>静的ログ</b>は主にアクティビティログであり、Dockerdには記録されませんが（APIログを除く）、永続化が必要です。</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - エンベロープの送信者名。例：「Neuraal <moo@mailcow.tld>」の場合、「Neuraal」を返します。"
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Neuraalに戻る"
+  }
+}

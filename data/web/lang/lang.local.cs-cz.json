@@ -1,0 +1,27 @@
+{
+  "acl": {
+    "pw_reset": "Povolit obnovení hesla uživatele Neuraal"
+  },
+  "add": {
+    "alias_address_info": "<small>Kompletní emailová adresa/y, nebo @example.com pro zachycení všech zpráv pro doménu (oddělené čárkami). <b>Pouze domény v systému Neuraal</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" název",
+    "license_info": "Licence není povinná, pomůžete však dalšímu vývoji.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Registrujte si své GUID</a>, nebo si <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">zaplaťte podporu pro svou instalaci Neuraal.</a>",
+    "main_name": "Název webu (\"Neuraal UI\")",
+    "r_info": "Šedé/vypnuté položky v seznamu aktivních omezení neuznává Neuraal jako platná a nelze je přesouvat. Neznámá omezení budou však budou stejně seřazena tak, jak jdou za sebou. <br>Nové prvky lze přidat do <code>inc/vars.local.inc.php</code> a pak je zde přepínat.",
+    "title_name": "Titulek webu (\"Neuraal UI\")",
+    "reset_password_vars": "<code>{{link}}</code> Vygenerovaný odkaz pro obnovení hesla<br><code>{{username}}</code> Název mailboxu uživatele, který požádal o resetování hesla.<br><code>{{username2}}</code> Název schránky pro obnovení<br><code>{{date}}</code> Datum podání žádosti o obnovení hesla<br><code>{{token_lifetime}}</code> Délka životnosti tokenu v minutách<br><code>{{hostname}}</code> Název serveru Neuraal",
+    "iam_auth_flow_info": "Kromě metody autorizačního kódu (Authorization Code Flow, výchozího v Keycloaku), jež se používá pro SSO, podporuje Neuraal také metody autentizaci přímo pomocí přihlašovacích údajů. The metoda Mailpassword Flow se pokusí ověřit přihlašovací údaje uživatele přímo v Admin REST API Keycloaku. Neuraal získá hash hesla z atributu <code>mailcow_password</code> , namapovaného v Keycloaku.",
+    "force_sso": "Vypnout přihlášení Neuraal a ponechat jen SSO",
+    "iam_extra_permission": "Aby vše fungovalo, musí mít Neuraal klient v Keycloaku nastavený <code>servisní účet</code> a povolení <code>view-users</code>."
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Jméno odesílatele, např. pro \"Neuraal &lt;moo@mailcow.tld&gt;\" vrátí \"Neuraal\""
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Zpět do Neuraal"
+  }
+}

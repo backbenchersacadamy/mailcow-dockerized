@@ -1,0 +1,32 @@
+{
+  "acl": {
+    "pw_reset": "Zezwalaj na resetowanie hasła użytkownika Neuraal"
+  },
+  "add": {
+    "alias_address_info": "<small>Pełny/e adres/y email lub @example.com, aby przejąć wszystkie wiadomości dla domeny (oddzielone przecinkami). <b>tylko domeny Neuraal</b>.</small>"
+  },
+  "admin": {
+    "forwarding_hosts_hint": "Wiadomości przychodzące od hostów wyszczególnionych tutaj są akceptowane bezwarunkowo. Dane hosty nie są następnie sprawdzane względem list DNSBL lub poddawane metodzie szarych list. Otrzymany od nich spam nie jest nigdy odrzucany, ale opcjonalnie może zostać umieszczony w folderze spam. Najpopularniejsze zastosowanie dla takiego rozwiązania to wyszczególnienie serwerów poczty, na których ustawiono przekierowanie poczty przychodzącej na Twój serwer Neuraal.",
+    "r_info": "Zablokowane/Wyłączone elementy na liście aktywnych ograniczeń nie są rozpoznawane przez Neuraal jako prawidłowe ograniczenia i nie można ich przesunąć. Niemniej jednak nierozpoznane ograniczenia zostaną wyświetlone w kolejności pojawiania się. <br>Nowe elementy można dodać w <code>inc/vars.local.inc.php</code>, aby móc je przełączać.",
+    "apps_name": "Nazwa \"aplikacji Neuraal\"",
+    "force_sso_text": "Jeśli skonfigurowany jest zewnętrzny dostawca OIDC, ta opcja ukrywa domyślne formularze logowania Neuraal i pokazuje tylko przycisk logowania pojedynczego",
+    "force_sso": "Wyłącz logowanie Neuraal i pokaż tylko pojedyncze logowanie",
+    "iam_auth_flow_info": "Oprócz przepływu kodu autoryzacyjnego (Standardowy przepływ w Keycloak), który służy do logowania jednokrotnego logowania, Neuraal obsługuje również przepływ uwierzytelniania z bezpośrednimi poświadczeniami. Mailpassword Flow próbuje zweryfikować dane uwierzytelniające użytkownika za pomocą Keycloak Admin REST API. Neuraal pobiera hashowane hasło z atrybutu <code>mailcow_password</code>, który jest mapowany w Keycloak.",
+    "iam_extra_permission": "Aby następujące ustawienia działały, klient Neuraal w Keycloak potrzebuje <code>konta serwisowego</code> oraz uprawnień do <code>podgląd-użytkowników</code>.",
+    "license_info": "Licencja nie jest wymagana, ale pomaga w dalszym rozwoju.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Zarejestruj swój GUID tutaj</a> lub <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Zamówienie wsparcia\">kup wsparcie dla instalacji Neuraal.</a>",
+    "main_name": "Nazwa \"Neuraal UI\"",
+    "reset_password_vars": "<code>{{link}}</code> Wygenerowany link do resetu hasła <br><code>{{username}}</code> Nazwa skrzynki pocztowej użytkownika, który poprosił o zresetowanie hasła<br><code>{{username2}}</code> Nazwa skrzynki pocztowej do odzyskiwania <br><code>{{date}}</code> Data złożenia żądania resetowania hasła<br><code>{{token_lifetime}}</code>Żywotność tokena w minutach<br><code>{{hostname}}</code> Nazwa hosta Neuraal",
+    "title_name": "Tytuł strony internetowej \"Neuraal UI\""
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =} – nazwa nadawcy (From name) z nagłówka wiadomości; np. dla \"Neuraal &lt;moo@mailcow.tld&gt;\" zwróci \"Neuraal\""
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Wróć do Neuraal"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>logi w pamięci</b> są gromadzone na listach Redis i przycinane do wartości <code>LOG_LINES</code> (%d) co minutę, aby ograniczyć nadmierne obciążenie systemu.</p> <p>Logi w pamięci nie są przeznaczone do trwałego przechowywania. Wszystkie aplikacje, które zapisują logi w pamięci, wysyłają je również do daemon Dockera, a więc do domyślnego sterownika logowania.</p> <p>Ten typ logów należy wykorzystywać do <b>debugowania drobnych problemów z kontenerami</b>.</p> <p><b>Logi zewnętrzne</b> są zbierane za pośrednictwem API danej aplikacji.</p> <p><b>Logi statyczne</b> to głównie dzienniki aktywności, które nie są zapisywane przez Dockerd, ale powinny być trwałe (z wyjątkiem logów API).</p>"
+  }
+}

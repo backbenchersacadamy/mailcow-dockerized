@@ -1,0 +1,32 @@
+{
+  "acl": {
+    "pw_reset": "Permite resetar a senha do usuário do Neuraal"
+  },
+  "add": {
+    "alias_address_info": "<small>Endereço(s) de e-mail completo(s) ou @example.com, para capturar todas as mensagens de um domínio (separadas por vírgula). <b>Apenas domínios do Neuraal</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Nome “Neuraal Apps”",
+    "forwarding_hosts_hint": "As mensagens recebidas são aceitas incondicionalmente de qualquer host listado aqui. Esses hosts não são então verificados em relação aos DNSBLs nem submetidos à lista cinza. O spam recebido deles nunca é rejeitado, mas, opcionalmente, pode ser arquivado na pasta Lixo eletrônico. O uso mais comum para isso é especificar servidores de e-mail nos quais você configurou uma regra que encaminha e-mails recebidos para o servidor Neuraal.",
+    "license_info": "Uma licença não é necessária, mas ajuda no desenvolvimento.<br><a href=\"https://www.servercow.de/mailcow? Lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Registre seu GUID aqui</a> ou <a href=\"https://www.servercow.de/mailcow? Lang=en#support\" target=\"_blank\" alt=\"Support order\">comprar suporte para sua instalação de Neuraal.</a>",
+    "main_name": "nome “Neuraal UI”",
+    "r_info": "Os elementos acinzentados/desativados na lista de restrições ativas não são conhecidos como restrições válidas para Neuraal e não podem ser movidos. De qualquer forma, restrições desconhecidas serão definidas em ordem de aparição. <br>Você pode adicionar novos elementos em <code>inc/vars.local.inc.php</code> para poder alterná-los.",
+    "reset_password_vars": "<code>{{link}}</code> Link de recuperação de senha gerado<br><code>{{username}}</code> nome da caixa de email do usuário que requisitou a recuperação de senha<br><code>{{username2}}</code> Nome da caixa de email recuperada<br><code>{{date}}</code> Data que a requisição de recuperação de senha foi feita<br><code>{{token_lifetime}}</code> O tempo de vida em minutos do token<br><code>{{hostname}}</code> O servidor do Neuraal",
+    "title_name": "Título do site “Neuraal UI”",
+    "force_sso_text": "Se um provedor OIDC externo for configurado, esta opção oculta os formulários de login padrão do Neuraal e mostra apenas o botão de single sign-on",
+    "force_sso": "Desabilitar login do Neuraal e mostrar apenas single sign-on",
+    "iam_auth_flow_info": "Além do fluxo de código de autorização (fluxo padrão no Keycloak), que é usado para login de single sign-on, o Neuraal também suporta fluxo de autenticação com credenciais diretas. O fluxo Mailpassword tenta validar as credenciais do usuário usando a API REST do administrador do Keycloak. O Neuraal recupera a senha hash do atributo <code>mailcow_password</code>, que é mapeado no Keycloak.",
+    "iam_extra_permission": "Para que as configurações a seguir funcionem, o cliente Neuraal no Keycloak precisa de uma <code>conta de serviço</code> e a permissão para <code>visualizar usuários</code>."
+  },
+  "debug": {
+    "log_info": "<p>Os <b>registros na memória do</b> Neuraal são coletados em listas do Redis e reduzidos para LOG_LINES (%d) a cada minuto para reduzir o martelamento.\r\n Os <br>registros na memória não devem ser persistentes. Todos os aplicativos que fazem login na memória também fazem login no daemon do Docker e, portanto, no driver de registro padrão.\r\n </p><br>O tipo de registro na memória deve ser usado para depurar pequenos problemas com contêineres.\r\n <p>Os <b>registros externos</b> são coletados por meio da API do aplicativo em questão.</p>\r\n <p>Os <b>registros estáticos</b> são principalmente registros de atividades, que não são registrados no Dockerd, mas ainda precisam ser persistentes (exceto os registros da API).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =} - Do nome do envelope, por exemplo, para “Neuraal < moo@mailcow.tld >”, ele retorna “Neuraal”"
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Voltar para o Neuraal"
+  }
+}

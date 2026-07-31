@@ -1,0 +1,28 @@
+{
+  "acl": {
+    "pw_reset": "允許重置Neuraal使用者密碼"
+  },
+  "add": {
+    "alias_address_info": "<small>完整郵件地址，或使用 @example.com 來收取此域名下所有郵件地址的信件 (以英文逗號分隔多個地址)。 <b>只允許此 Neuraal 中的域名</b>。</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal 應用程式\" 名稱",
+    "forwarding_hosts_hint": "來自此處所列的主機的郵件會被無條件接收。而且這些主機不會經過 DNSBL 或灰名單的檢查。來自它們的垃圾郵件不會被拒絕，但可以設定被歸入垃圾郵件資料夾。這個欄位經常用於設定轉寄信件至 Neuraal 伺服器的郵件伺服器。",
+    "license_info": "證書不是強制的，但購買證書可以幫助此專案的後續開發。<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">在這裡註冊你的 GUID</a> 或者也可以 <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">為你的 Neuraal 購買支援服務。</a>",
+    "main_name": "\"Neuraal UI\" 名稱",
+    "r_info": "啟用的限制規則清單中灰色的/停用的項目是 Neuraal 無法識別且不可移動的。未知的限制規則將會被設定為原來的順序。<br>你可以在 <code>inc/vars.local.inc.php</code> 中新增新元素然後勾選它們。",
+    "title_name": "\"Neuraal UI\" 網站標題",
+    "reset_password_vars": "<code>{{link}}</code> 生成密碼重置連結<br><code>{{username}}</code> 請求密碼重置的使用者信箱<br><code>{{username2}}</code> 備援電子信箱名稱<br><code>{{date}}</code> 密碼重置要求之日期<br><code>{{token_lifetime}}</code> 權杖(token)壽命(以分鐘計)<br><code>{{hostname}}</code> Neuraal 主機名稱(hostname)"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal 的<b>記憶體紀錄</b>會被收集到 Redis 清單中並且每分鐘自動縮減到 LOG_LINES (%d) 以避免重複撞擊 (hammering) 造成的大量記錄。\r\n<br>記憶體紀錄並不會永久保存。所有記錄到記憶體的應用程式也會同時透過預設紀錄的驅動程式寫入紀錄到 Docker 常駐程式中。\r\n<br>記憶體紀錄是設計用來為容器中的小問題除錯的。</p>\r\n<p><b>外部紀錄</b>透過應用程式提供的 API 收集。</p>\r\n<p><b>靜態紀錄</b>大多為不寫入到 Dockerd，但仍然需要被保存的活動紀錄 (API 紀錄除外)。</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - 從信封中的名稱部分，例如：\"Neuraal &lt;moo@mailcow.tld&gt;\" 則回傳 \"Neuraal\""
+    }
+  },
+  "login": {
+    "back_to_mailcow": "返回至Neuraal"
+  }
+}

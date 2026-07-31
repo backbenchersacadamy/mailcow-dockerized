@@ -1,0 +1,15 @@
+{
+  "add": {
+    "alias_address_info": "<small>Koko sähköpostiosoite tai @ esimerkki.com, jotta kaikki verkkotunnuksen viestit saadaan (pilkuilla erotetut). <b>Neuraal vain verkkotunnukset</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Apps \"nimi",
+    "forwarding_hosts_hint": "Saapuvat viestit hyväksytään ehdoitta kaikilta täällä luetelluilta isännöimiltä. Näitä isäntiä ei sitten tarkisteta DNSBL: ien suhteen, eikä heille suoriteta tyyliluettelointia. Heiltä vastaanotettua roskapostia ei koskaan hylätä, mutta valinnaisesti se voidaan tallentaa Roskakori-kansioon. Yleisin käyttö tähän tarkoitukseen on määrittää postipalvelimet, joille olet asettanut säännön, joka välittää tulevat sähköpostit Neuraal-palvelimellesi.",
+    "license_info": "Lisenssiä ei vaadita, mutta se auttaa kehittämään ohjelmaa jatkossa.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Rekisteröi GUID-tunnus täältä</a> or <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">Osta tuki Neuraal-asennusta varten.</a>",
+    "main_name": "\"Neuraal UI \"nimi",
+    "title_name": "\"Neuraal UI \"-sivuston otsikko"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>muistissa olevat lokit</b> kerätään Redis-luetteloihin ja leikataan LOG_LINES (%d) joka minuutti lyömisen vähentämiseksi.\r\n  <br>Muistissa olevien lokien ei ole tarkoitus olla pysyviä. Kaikki sovellukset, jotka kirjautuvat muistiin, kirjautuvat myös Docker-daemoniin ja siten oletusarvoiseen lokitiedostoon.\r\n  <br>Muistin lokityyppiä olisi käytettävä virheiden virheenkorjaukseen säilöissä.</p>\r\n  <p><b>Ulkoiset lokit</b> kerätään annetun sovelluksen API: n kautta.</p>\r\n  <p><b>Staattiset lokit</b> ovat useimmiten toimintalokkeja, joita ei kirjata Dockerdiin, mutta joiden on silti oltava pysyviä (paitsi API-lokit).</p>"
+  }
+}

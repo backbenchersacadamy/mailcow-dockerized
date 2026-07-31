@@ -1,0 +1,32 @@
+{
+  "acl": {
+    "pw_reset": "Toegang om Neuraal gebruikers wachtwoord te resetten"
+  },
+  "add": {
+    "alias_address_info": "<small>Volledig(e) mailadres(sen) of @example.com, om een catch-all aan te maken voor een domein (kommagescheiden). <b>Uitsluitend Neuraal-domeinen</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal-apps\"",
+    "forwarding_hosts_hint": "Inkomende berichten worden onvoorwaardelijk geaccepteerd vanaf iedere host hieronder vermeld. Deze hosts worden hierdoor niet gecontroleerd op DNSBLs, en zullen de greylisting omzeilen. Spam wordt daarentegen zoals gebruikelijk in de spamfolder geplaatst. Dit wordt vaak gebruikt om mailservers te specificeren die alles doorsturen naar deze Neuraal-server.",
+    "license_info": "Een licentie is niet vereist. Je steunt hier echter wel de ontwikkeling van Neuraal mee.<br><a href=\"https://www.servercow.de/mailcow?lang=nl#sal\" target=\"_blank\" alt=\"SAL order\">Registreer je GUID hier</a>, of <a href=\"https://www.servercow.de/mailcow?lang=nl#support\" target=\"_blank\" alt=\"Support order\">schaf ondersteuning aan voor deze installatie.</a>",
+    "main_name": "\"Neuraal\"",
+    "title_name": "\"Neuraal\" (websitetitel)",
+    "ui_header_announcement_help": "De aankondiging zal zichtbaar zijn voor zowel alle aangemelde gebruikers als op het aanmeldingsscherm van Neuraal.",
+    "force_sso_text": "Als een externe OIDC-provider is geconfigureerd, verbergt deze optie de standaard Neuraal-loginformulieren en wordt alleen de Single SignOn-knop weergegeven.",
+    "force_sso": "Neuraal-login uitschakelen en alleen Single SignOn tonen",
+    "iam_auth_flow_info": "Naast de Authorization Code Flow (Standard Flow in Keycloak), die wordt gebruikt voor Single SignOn-login, ondersteunt Neuraal ook een authenticatiestroom met directe inloggegevens. De Mailpassword Flow probeert de gebruikersgegevens te valideren door gebruik te maken van de Keycloak Admin REST API. Neuraal haalt het gehashte wachtwoord op uit het attribuut <code>mailcow_password</code>, dat in Keycloak is gekoppeld.",
+    "iam_extra_permission": "Om de volgende instellingen te laten werken, heeft de Neuraal-client in Keycloak een <code>service account</code> nodig en de toestemming <code>view-users</code>.",
+    "reset_password_vars": "<code>{{link}}</code> De gegenereerde link om het wachtwoord te resetten<br><code>{{username}}</code> De mailboxnaam van de gebruiker die het wachtwoordherstel heeft aangevraagd<br><code>{{username2}}</code> De naam van de herstelmailbox<br><code>{{date}}</code> De datum waarop het verzoek tot wachtwoordherstel is gedaan<br><code>{{token_lifetime}}</code> De geldigheidsduur van de token in minuten<br><code>{{hostname}}</code> De Neuraal-hostnaam"
+  },
+  "debug": {
+    "log_info": "<p>Neuraals <b>geheugenlogs</b> worden elke minuut afgesneden naar maximaal %d regels (LOG_LINES) om de stabiliteit te garanderen.<br>Geheugenlogs zijn niet bedoeld om bewaard te blijven. Alle applicaties die geheugenlogs schrijven worden ook naar het Docker-proces gelogd.<br>De geheugenlogs kunnen gebruikt worden voor het oplossen van problemen met bepaalde containers.</p><p><b>Externe logs</b> worden verzameld door middel van de API van deze applicaties.</p><p><b>Statische logs</b> zijn activiteitenlogs die niet naar het Docker-proces worden gelogd, maar wel bewaard moeten blijven (uitgezonderd API-logs).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Naam van de afzender, bijvoorbeeld bij \"Neuraal <moo@mailcow.tld>\" wordt \"Neuraal\" teruggegeven"
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Terug naar Neuraal"
+  }
+}

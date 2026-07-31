@@ -1,0 +1,18 @@
+{
+  "acl": {
+    "pw_reset": "Neuraal kullanıcı şifresini sıfırlamaya izin ver"
+  },
+  "add": {
+    "alias_address_info": "<small>Bir alan adına ilişkin tüm iletileri yakalamak için tam e-posta adresi veya @example.com olacak şeklinde girin (virgülle ayırın).<b>sadece Neuraal alan adları</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Uygulamaları\" adı",
+    "forwarding_hosts_hint": "Gelen mesajlar burada listelenen tüm ana bilgisayarlardan koşulsuz olarak kabul edilir. Bu ana bilgisayarlar daha sonra DNSBL'lere karşı kontrol edilmez veya gri listeye tabi tutulmaz. Onlardan gelen istenmeyen e-postalar asla reddedilmez, ancak isteğe bağlı olarak Önemsiz klasörüne dosyalanabilir. Bunun en yaygın kullanımı, gelen e-postaları Neuraal sunucunuza ileten bir kural kurduğunuz posta sunucularını belirtmektir.",
+    "main_name": "“Neuraal UI” adı",
+    "license_info": "Lisans gerekli değildir ancak daha fazla geliştirmeye yardımcı olur.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"\">GUID'inizi buraya kaydedin.</a> or <a href=\"https://www.servercow.de/mailcow?lang=tr#destek\" target=\"_blank\" alt=\"\">Neuraal kurulumunuz için destek satın alın.</a>",
+    "title_name": "\"Neuraal UI\" web sitesi başlığı"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>bellek içi günlükler</b>, Redis listelerinde toplanır ve çekiçlemeyi azaltmak için her dakika LOG_LINES (%d) olacak şekilde kırpılır.\\r\\n <br>Bellek içi günlükler ısrarcı. Bellekte oturum açan tüm uygulamalar, ayrıca Docker arka plan programında ve dolayısıyla varsayılan günlük sürücüsünde oturum açar.\\r\\n <br>Bellek içi günlük türü, kapsayıcılarla ilgili küçük sorunları ayıklamak için kullanılmalıdır.</p>\\r\\n <p><b>Harici günlükler</b>, verilen uygulamanın API'si aracılığıyla toplanır.</p>\\r\\n <p><b>Statik günlükler</b> çoğunlukla etkinlik günlükleridir. Dockerd'da günlüğe kaydedilmez ancak yine de kalıcı olmaları gerekir (API günlükleri hariç).</p>"
+  }
+}

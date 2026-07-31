@@ -1,0 +1,29 @@
+{
+  "admin": {
+    "title_name": "\"Neuraal UI\" weboldal címe",
+    "forwarding_hosts_hint": "A bejövő üzeneteket feltétel nélkül elfogadják az itt felsorolt összes állomásról. Ezeket az állomáshelyeket nem ellenőrzik a DNSBL-ek alapján, és nem vetik alá a szürkelistázásnak. A tőlük érkező spameket a rendszer soha nem utasítja el, de opcionálisan a Junk mappába iktathatja őket. Leggyakrabban olyan levelezőszerverek megadására használjuk, amelyeken olyan szabályt állítottunk be, amely a bejövő e-maileket a Neuraal-kiszolgálóra továbbítja.",
+    "apps_name": "\"Neuraal Apps\" név",
+    "force_sso_text": "Ha egy külső OIDC-szolgáltató van beállítva, ez az opció elrejti az alapértelmezett Neuraal bejelentkezési űrlapokat, és csak az egységes bejelentkezési (Single Sign-On) gombot jeleníti meg",
+    "force_sso": "A Neuraal bejelentkezés letiltása és csak az egységes bejelentkezés megjelenítése",
+    "iam_auth_flow_info": "Az engedélyezési kód áramláson (Authorization Code Flow) kívül, amelyet az egységes bejelentkezéshez (Single-Sign On) használnak (ez a standard áramlás Keycloak-ban), a Neuraal támogatja a közvetlen hitelesítő adatokkal történő hitelesítési áramlást is. A Jelszóáramlás (Mailpassword Flow) megpróbálja érvényesíteni a felhasználó hitelesítő adatait a Keycloak Admin REST API használatával. A Neuraal a <code>mailcow_password</code> attribútumból olvassa be a hash-elt jelszót, amely a Keycloak-ban van leképezve.",
+    "iam_extra_permission": "A következő beállításokhoz a Keycloak-ban lévő Neuraal kliensnek szüksége van egy <code>Service account</code>-ra és a <code>view-users</code> engedélyre.",
+    "license_info": "A licensz nem kötelező, de segít a további fejlesztésben.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Regisztrálja a GUID-ját itt</a> vagy <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">vásároljon támogatást a Neuraal telepítéséhez.</a>",
+    "main_name": "\"Neuraal UI\" név",
+    "r_info": "A szürkével/letiltva jelölt elemek az aktív korlátozások listáján a Neuraal számára nem érvényes korlátozások, és nem mozgathatók. Az ismeretlen korlátozások a megjelenési sorrendben lesznek beállítva. <br>Új elemeket adhat hozzá a <code>inc/vars.local.inc.php</code> fájlban, hogy váltani tudja őket.",
+    "reset_password_vars": "<code>{{link}}</code> A generált jelszó-helyreállítási link<br><code>{{username}}</code> A jelszó-helyreállítást kérő felhasználó postafiók neve<br><code>{{username2}}</code> A helyreállítási postafiók neve<br><code>{{date}}</code> A jelszó-helyreállítási kérelem dátuma<br><code>{{token_lifetime}}</code> A token élettartama percekben<br><code>{{hostname}}</code> A Neuraal hosztnév"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - A boríték feladójának neve, pl. a \"Neuraal &lt;moo@mailcow.tld&gt;\" esetén \"Neuraal\"-t ad vissza"
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Vissza a Neuraal-hoz"
+  },
+  "acl": {
+    "pw_reset": "Lehetővé teszi a Neuraal felhasználói jelszavak visszaállítását"
+  },
+  "add": {
+    "alias_address_info": "<small>Teljes e-mail cím(ek) vagy @example.com, egy domainhez tartozó összes üzenetet elfogásához (vesszővel elválasztva). <b>csak Neuraal tartományok</b>.</small>"
+  }
+}

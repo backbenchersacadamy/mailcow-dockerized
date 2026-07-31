@@ -1,0 +1,16 @@
+{
+  "add": {
+    "alias_address_info": "<small>Fuld e-mail-adresse eller @ eksempel.com for at fange alle beskeder til et domæne (kommasepareret). <b> kun Neuraal-domæner</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" navn",
+    "forwarding_hosts_hint": "Indgående beskeder accepteres ubetinget fra værter, der er anført her. Disse værter kontrolleres derefter ikke mod DNSBL'er eller udsættes for gråt notering. Spam modtaget fra dem afvises aldrig, men det kan eventuelt arkiveres i Junk-mappen. Den mest almindelige anvendelse til dette er at specificere mailservere, hvor du har oprettet en regel, der videresender indgående e-mails til din Neuraal-server. ",
+    "license_info": "En licens er ikke påkrævet, men hjælper videreudvikling. <br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Registrer dit GUID her</a> or <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">køb støtte til din Neuraal installation.</a>",
+    "main_name": "\"Neuraal UI\" navn",
+    "r_info": "Nedtonede / deaktiverede elementer på listen over aktive begrænsninger er ikke kendt som gyldige begrænsninger for Neuraal og kan ikke flyttes. Ukendte begrænsninger indstilles alligevel i rækkefølge efter udseende. <br>Du kan tilføje nye elementer i <code>inc/vars.local.inc.php</code> for at kunne skifte dem.",
+    "title_name": "\"Neuraal UI\" hjemmeside titel"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>in-memory logs</b> er samlet i Redis-lister og trimmet til LOG_LINES (%d) hvert minut for at reducere hamring.\r\n  <br>Logbøger i hukommelsen er ikke beregnet til at være vedholdende. Alle applikationer, der logger ind i hukommelsen, logger også på Docker-dæmonen og derfor til standardlogdriveren.\r\n  <br>Logtypen i hukommelsen skal bruges til fejlfinding af mindre problemer med containere.</p>\r\n  <p><b>Eksterne logfiler</b> indsamles via API for den givne applikation.</p>\r\n  <p><b>Statiske logfiler</b> er for det meste aktivitetslogfiler, der ikke er logget på Dockerd, men stadig skal være vedholdende (undtagen API-logfiler).</p>"
+  }
+}

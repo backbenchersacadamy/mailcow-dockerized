@@ -1,0 +1,25 @@
+# Neuraal branding overrides for the mailcow web UI.
+#
+# data/conf/nginx/*.custom is listed in .gitignore and is pulled in by
+# `include /etc/nginx/conf.d/site.*.custom;` at the end of the generated
+# site config, so this file survives every `update.sh` run.
+#
+# Exact-match locations have the highest priority in nginx, so these win over
+# the generic `location ~ ^/(fonts|js|css|img)/` rule without touching any
+# tracked file.
+
+# Browser tab icon (base.twig hardcodes /favicon.png)
+location = /favicon.png {
+    alias /web/img/neuraal-favicon.png;
+    expires max;
+    add_header Cache-Control public;
+}
+
+# Fallback logo used by the twig templates when no custom logo is stored in
+# Redis (Admin > Configuration > Customize). Keeps the UI branded even after a
+# Redis flush or a fresh volume.
+location = /img/cow_mailcow.svg {
+    alias /web/img/neuraal-logo.svg;
+    expires max;
+    add_header Cache-Control public;
+}

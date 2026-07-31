@@ -1,0 +1,29 @@
+{
+  "add": {
+    "alias_address_info": "<small>Adresse(s) courriel complète(s) ou @example.com, pour capturer tous les messages d'un domaine (séparées par des virgules). <b>Seulement des domaines Neuraal</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Nom « Neuraal Apps »",
+    "forwarding_hosts_hint": "Tous les messages entrants sont acceptés sans condition depuis les hôtes listés ici. Ces hôtes ne sont pas validés par DNSBLs ou sujets à un greylisting. Les pourriels reçus de ces hôtes ne sont jamais rejetés, mais occasionnellement, ils peuvent se retrouver dans le dossier Pourriel. L'usage le plus courant est pour les serveurs de courriels qui ont été configurés pour réexpédier leurs courriels entrants vers votre serveur Neuraal.",
+    "license_info": "Une licence n’est pas requise, mais contribue au développement.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Enregistrer votre GUID ici</a> ou <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">acheter le support pour votre installation Neuraal.</a>",
+    "main_name": "Nom « Neuraal UI »",
+    "r_info": "Les éléments grisés/désactivés sur la liste des restrictions actives ne sont pas considérés comme des restrictions valides pour Neuraal et ne peuvent pas être déplacés. Des restrictions inconnues seront établies par ordre d’apparition de toute façon. <br>Vous pouvez ajouter de nouveaux éléments dans le code <code>inc/vars.local.inc.php</code> pour pouvoir les basculer.",
+    "title_name": "Titre du site web « Neuraal UI »",
+    "reset_password_vars": "<code>{{link}}</code> Le lien généré pour la réinitialisation du mot de passe<br><code>{{username}}</code> L'adresse de la boîte mail de l'utilisateur qui a demandé la réinitialisation du mot de passe ayant un compte Neuraal<br><code>{{username2}}</code> L'adresse de la boîte mail de récupération<br><code>{{date}}</code> La date à laquelle la demande de réinitialisation du mot de passe a été faite<br><code>{{token_lifetime}}</code> La durée de vie du jeton en minutes<br><code>{{hostname}}</code> Le nom d'hôte de votre serveur Neuraal",
+    "force_sso_text": "Si un fournisseur OIDC externe est configuré, cette option masque les formulaires de connexion par défaut de Neuraal et n'affiche que le bouton Singe Sign-On",
+    "force_sso": "Désactiver la connexion Neuraal et n'afficher que Singe Sign-On",
+    "iam_auth_flow_info": "Outre le flux de code d'autorisation (flux standard dans Keycloak), qui est utilisé pour la connexion unique, Neuraal prend également en charge le flux d'authentification avec des informations d'identification directes. Le flux Mailpassword tente de valider les informations d'identification de l'utilisateur en utilisant l'API REST de Keycloak Admin. Neuraal récupère le mot de passe haché dans l'attribut <code>mailcow_password</code>, qui est mappé dans Keycloak.",
+    "iam_extra_permission": "Pour que les paramètres suivants fonctionnent, le client Neuraal dans Keycloak a besoin d'un <code>Compte de service</code> et de l'autorisation de <code>voir les utilisateurs</code>."
+  },
+  "debug": {
+    "log_info": "<p>Les logs <b>En-mémoire</b> Neuraal sont collectés dans des listes Redis et découpées en LOG_LINES (%d) chaque minute pour réduire la charge.\n  <br>Les logs En-mémoire ne sont pas destinés à être persistants. Toutes les applications qui se connectent en mémoire, se connectent également au démon Docker, et donc au pilote de journalisation par défaut.\n  <br>Le type de journal en mémoire doit être utilisé pour déboguer les problèmes mineurs avec les conteneurs.</p>\n  <p><b>Les logs externes</b> sont collectés via l'API de l'application concernée.</p>\n  <p>Les journaux <b>statiques</b> sont principalement des journaux d’activité, qui ne sont pas enregistrés dans Dockerd, mais qui doivent toujours être persistants (sauf pour les logs API).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =} - À partir du nom de l'enveloppe, par exemple, pour « Neuraal &lt;moo@mailcow.tld&gt ; » on obtient « Neuraal »"
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Revenir sur Neuraal"
+  }
+}

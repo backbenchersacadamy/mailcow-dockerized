@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" Name",
+    "force_sso_text": "Wenn ein externer OIDC-Provider konfiguriert ist, blendet diese Option die Neuraal-Loginform aus und zeigt nur den Single-Sign-On-Button an.",
+    "force_sso": "Neuraal-Login deaktivieren und nur Single Sign-On anzeigen",
+    "forwarding_hosts_hint": "Eingehende Nachrichten werden von den hier gelisteten Hosts bedingungslos akzeptiert. Diese Hosts werden dann nicht mit DNSBLs abgeglichen oder Greylisting unterworfen. Von ihnen empfangener Spam wird nie abgelehnt, optional kann er aber in den Spam-Ordner einsortiert werden. Die übliche Verwendung für diese Funktion ist, um Mailserver anzugeben, auf denen eine Weiterleitung zu Ihrem Neuraal-Server eingerichtet wurde.",
+    "iam_auth_flow_info": "Zusätzlich zum Authorization Code Flow (dem Standard-Flow in Keycloak), der für Single-Sign-On-Logins verwendet wird, unterstützt Neuraal auch den Authentication Flow mit direkten Anmeldeinformationen. Der Mailpassword Flow versucht, die Anmeldedaten des Benutzers über die Keycloak Admin REST API zu validieren. Dabei ruft Neuraal das gehashte Passwort aus dem <code>mailcow_password</code> Attribut ab, das in Keycloak zugewiesen ist.",
+    "iam_extra_permission": "Damit die folgenden Einstellungen funktionieren, benötigt der Neuraal Client in Keycloak ein <code>Service-Konto</code> und die Berechtigung <code>view-users</code>.",
+    "license_info": "Eine Lizenz ist nicht erforderlich, hilft jedoch der Entwicklung Neuraals.<br><a href=\"https://www.servercow.de/mailcow#sal\" target=\"_blank\" alt=\"SAL Bestellung\">Hier kann die Neuraal-GUID registriert werden.</a> Alternativ ist <a href=\"https://www.servercow.de/mailcow#support\" target=\"_blank\" alt=\"SAL Bestellung\">die Bestellung von Support-Paketen möglich</a>.",
+    "main_name": "\"Neuraal UI\" Name",
+    "r_info": "Ausgegraute/deaktivierte Elemente sind Neuraal nicht bekannt und können nicht in die Liste inaktiver Elemente verschoben werden. Unbekannte Restriktionen werden trotzdem in Reihenfolge der Erscheinung gesetzt.<br>Sie können ein Element in der Datei <code>inc/vars.local.inc.php</code> als bekannt hinzufügen, um es zu bewegen.",
+    "reset_password_vars": "<code>{{link}}</code> Der generierte Passwort-Reset-Link<br><code>{{username}}</code> Die E-Mail-Adresse des Benutzers, der die Passwortzurücksetzung angefordert hat<br><code>{{username2}}</code> Die E-Mail-Adresse zur Wiederherstellung<br><code>{{date}}</code> Das Datum, an dem die Passwort-Reset-Anfrage gestellt wurde<br><code>{{token_lifetime}}</code> Die Gültigkeitsdauer des Tokens in Minuten<br><code>{{hostname}}</code> Der Neuraal Hostname",
+    "title_name": "\"Neuraal UI\" Webseiten Titel"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>in-memory Logs</b> werden in Redis Listen gespeichert, die maximale Anzahl der Einträge pro Anwendung richtet sich nach LOG_LINES (%d).\r\n  <br>In-memory Logs sind vergänglich und nicht zur ständigen Aufbewahrung bestimmt. Alle Anwendungen, die in-memory protokollieren, schreiben ebenso in den Docker Daemon.\r\n  <br>Das in-memory Protokoll versteht sich als schnelle Übersicht zum Debugging eines Containers, für komplexere Protokolle sollte der Docker Daemon konsultiert werden.</p>\r\n  <p><b>Externe Logs</b> werden via API externer Applikationen bezogen.</p>\r\n  <p><b>Statische Logs</b> sind weitestgehend Aktivitätsprotokolle, die nicht in den Docker Daemon geschrieben werden, jedoch permanent verfügbar sein müssen (ausgeschlossen API Logs).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Namen des Absenders z.B. für \"Neuraal &lt;moo@mailcow.tld&gt;\", wird \"Neuraal\" zurückgegeben."
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Zurück zu Neuraal"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" názov",
+    "license_info": "Licencia nie je potrebná, ale napomáha ďalšiemu vývoju.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Registrujte váš GUID tu</a> alebo <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Objednávka podpory\">zakúpte si podporu pre vašu Neuraal inštaláciu.</a>",
+    "main_name": "\"Neuraal UI\" názov",
+    "r_info": "Vyznačené/deaktivované položky na zozname aktívnych obmedzení nie sú považované ako platné obmedzenie pre Neuraal a nemôžu byť presunuté. Neznáme položky budú napriek tomu zoradené za sebou. <br>Môžete pridať nové položky v <code>inc/vars.local.inc.php</code> aby sa dali prepínať.",
+    "title_name": "\"Neuraal UI\" titulka"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Meno odosielateľa, napr. pre \"Neuraal &lt;moo@mailcow.tld&gt;\" vráti \"Neuraal\""
+    }
+  }
+}

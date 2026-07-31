@@ -1,0 +1,21 @@
+{
+  "acl": {
+    "pw_reset": "Permitir el restablecimiento de la contraseña del usuario Neuraal"
+  },
+  "add": {
+    "alias_address_info": "<small>Dirección(es) de correo completa(s) ó @dominio.com, para atrapar todos los mensajes para un dominio (separado por coma). <b>Dominios que existan en Neuraal solamente</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Nombre \"Neuraal Apps\"",
+    "forwarding_hosts_hint": "Los mensajes entrantes son aceptados incondicionalmente de cualquiera de los hosts enumerados aquí. Estos hosts no se comprueban con listas DNSBL o se someten a greylisting. El spam recibido de ellos nunca se rechaza, pero opcionalmente se puede archivar en la carpeta de correo no deseado. El uso más común para esto es especificar los servidores de correo en los que ha configurado una regla que reenvía los correos electrónicos entrantes al servidor Neuraal.",
+    "main_name": "Nombre \"Neuraal UI\"",
+    "r_info": "Los elementos desactivados en la lista de restricciones activas no son reconocidas como restricciones válidas por Neuraal y no se pueden mover. <br>Se puede agregar nuevos elementos en <code>inc/vars.local.inc.php</code> para poder activarlos.",
+    "title_name": "\"Neuraal UI\" (título de la página)",
+    "reset_password_vars": "<code>{{link}}</code> El enlace generado para el restablecimiento de contraseña<br><code>{{username}}</code> El buzón del usuario que ha solicitado el restablecimiento de contraseña<br><code>{{username2}}</code> La dirección del buzón de recuperación de contraseña<br><code>{{date}}</code> La fecha en que se realizó la solicitud de restablecimiento de contraseña<br><code>{{token_lifetime}}</code> El periodo de vigencia del token en minutos<br><code>{{hostname}}</code> El servidor Neuraal",
+    "license_info": "No es obligatorio contar con una licencia, pero ayuda a continuar el desarrollo.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">Indique aquí su GUID</a> o <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">adquiera servicios de soporte para su instalación de Neuraal.</a>",
+    "force_sso": "Deshabilitar el inicio de sesión de Neuraal y mostrar solamente el inicio de sesión único"
+  },
+  "login": {
+    "back_to_mailcow": "Volver a Neuraal"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "acl": {
+    "pw_reset": "Neuraal foydalanuvchi parolini tiklashga ruxsat berish"
+  },
+  "add": {
+    "alias_address_info": "<small>Toʻliq e-pochta manzil(lar)i yoki @example.com — domenga keladigan barcha xabarlarni qabul qilish uchun (vergul bilan ajratilgan). <b>Faqat Neuraal domenlari</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" nomi",
+    "force_sso_text": "Tashqi OIDC provayder sozlangan boʻlsa, bu variant standart Neuraal kirish formalarini yashiradi va faqat Yagona kirish tugmasini koʻrsatadi",
+    "force_sso": "Neuraal kirishini oʻchirib, faqat Yagona kirishni koʻrsatish",
+    "forwarding_hosts_hint": "Kiruvchi xabarlar bu yerda keltirilgan istalgan xostlardan shartsiz qabul qilinadi. Bu xostlar keyin DNSBL ga qarshi tekshirilmaydi yoki greylisting ga olinmaydi. Ulardan kelgan spam hech qachon rad etilmaydi, ammo ixtiyoriy ravishda Junk papkasiga joylashtirilishi mumkin. Buning eng keng tarqalgan ishlatilishi — Neuraal serveringizga kiruvchi xatlarni yoʻnaltirish qoidasi oʻrnatilgan pochta serverlarini koʻrsatish.",
+    "iam_auth_flow_info": "Yagona kirish (SSO) uchun ishlatiladigan Authorization Code Flow (Keycloak da Standard Flow) qoʻshimcha ravishda, Neuraal toʻgʻridan-toʻgʻri maʼlumotlar bilan Autentifikatsiya oqimini ham qoʻllab-quvvatlaydi. Mailpassword Flow Keycloak Admin REST API yordamida foydalanuvchi maʼlumotlarini tekshirishga harakat qiladi. Neuraal Keycloakda xaritalangan <code>mailcow_password</code> atributidan xeshlangan parolni oladi.",
+    "iam_extra_permission": "Quyidagi sozlamalarning ishlashi uchun Keycloak dagi Neuraal mijoziga <code>Service account</code> va <code>view-users</code> ruxsati kerak.",
+    "license_info": "Litsenziya talab qilinmaydi, ammo bu loyihaning rivojlanishiga yordam beradi.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"SAL order\">GUID ni bu yerda roʻyxatdan oʻtkazing</a> yoki <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Support order\">Neuraal oʻrnatmangiz uchun yordam sotib oling.</a>",
+    "main_name": "\"Neuraal UI\" nomi",
+    "r_info": "Faol cheklovlar roʻyxatidagi kulrang/oʻchirilgan elementlar Neuraal uchun haqiqiy cheklovlar sifatida tanilmaydi va koʻchirib boʻlmaydi. Nomaʼlum cheklovlar baribir koʻrinish tartibida oʻrnatiladi. <br><code>inc/vars.local.inc.php</code> da yangi elementlarni qoʻshib, ularni almashtirishingiz mumkin.",
+    "reset_password_vars": "<code>{{link}}</code> Yaratilgan parolni tiklash havolasi<br><code>{{username}}</code> Parolni tiklashni soʻragan foydalanuvchining pochta qutisi nomi<br><code>{{username2}}</code> Tiklash uchun pochta qutisi nomi<br><code>{{date}}</code> Parolni tiklash soʻrovi qilingan sana<br><code>{{token_lifetime}}</code> Daqiqalardagi token muddati<br><code>{{hostname}}</code> Neuraal xost nomi",
+    "title_name": "\"Neuraal UI\" veb-sayt sarlavhasi"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>xotiradagi jurnallar</b> Redis roʻyxatlarida toʻplanadi va har daqiqada hammomilik kamaytirish uchun LOG_LINES (%d) ga qisqartiriladi.\r\n  <br>Xotiradagi jurnallar doimiy boʻlishi mumkin emas. Xotirada jurnal yurituvchi barcha ilovalar ham Docker daemoniga, demak standart jurnal yuritish drayveriga ham yozadi.\r\n  <br>Xotiradagi jurnal turi konteynerlar bilan kichik muammolarni nosozliklarni bartaraf etish uchun ishlatilishi kerak.</p>\r\n  <p><b>Tashqi jurnallar</b> berilgan ilovaning API si orqali toʻplanadi.</p>\r\n  <p><b>Statik jurnallar</b> asosan faollik jurnallaridir, ular Dockerd ga yozilmaydi, lekin baribir doimiy boʻlishi kerak (API jurnallaridan tashqari).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Konvertning Kimdan ismi, masalan \"Neuraal &lt;moo@mailcow.tld&gt;\" uchun \"Neuraal\" qaytaradi"
+    }
+  },
+  "login": {
+    "back_to_mailcow": "Neuraal ga qaytish"
+  }
+}

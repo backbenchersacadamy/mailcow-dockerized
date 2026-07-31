@@ -1,0 +1,10 @@
+{
+  "acl": {
+    "pw_reset": "Permetre el restabliment de la contrasenya de l'usuari Neuraal"
+  },
+  "admin": {
+    "apps_name": "Nom de \"Neuraal Apps\"",
+    "main_name": "Nom de \"Neuraal UI\"",
+    "title_name": "Nom del lloc \"Neuraal UI\""
+  }
+}

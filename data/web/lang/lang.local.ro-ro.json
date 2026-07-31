@@ -1,0 +1,15 @@
+{
+  "add": {
+    "alias_address_info": "<small>Adresă/e de email completă/e sau @example.com, pentru a prinde toate mesajele pentru un domeniu (separate prin virgulă). <bnumai domenii Neuraal</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Nume \"Neuraal Apps\"",
+    "forwarding_hosts_hint": "Mesajele primite sunt acceptate necondiționat de la orice gazde listate aici. Aceste gazde nu sunt verificate împotriva DNSBL sau supuse la greylisting. Spamul primit de la ele nu este niciodată respins, dar opțional poate fi depus în folderul Junk. Cea mai obișnuită utilizare pentru acest lucru este de a specifica serverele de email pe care ai configurat o regulă care transmite mesajele primite către serverul Neuraal.",
+    "main_name": "Nume \"Neuraal UI\"",
+    "r_info": "Elementele cu aspect gri/dezactivate din lista restricțiilor active nu sunt cunoscute ca restricții valide pentru Neuraal și nu pot fi mutate. Restricțiile necunoscute vor fi oricum stabilite în ordinea apariției. <br>Poți adăuga elemente noi în <code>inc/vars.local.inc.php</code> pentru a le putea comuta.",
+    "title_name": "Titlu website \"Neuraal UI\""
+  },
+  "debug": {
+    "log_info": "<p><b>jurnalele din memorie</b> pentru Neuraal sunt colectate în listele Redis și trimise la LOG_LINES (%d) în fiecare minut pentru a reduce ciocnirea.\n  <br>Jurnalele din memorie nu sunt menite a fi persistente. Toate aplicațiile care înregistrează jurnale în memorie, înregistrează de asemenea jurnale în daemonul Docker și, prin urmare, în driverul de jurnale implicit.\n  <br>Tipul de jurnal din memorie trebuie utilizat pentru depanarea problemelor minore cu containerele.</p>\n  <p><b>Jurnalele externe</b> sunt colectate prin API-ul aplicației respective.</p>\n  <p><b>Jurnalele statice</b> sunt, în majoritate, jurnale de activitate care nu sunt înregistrate în Docker, dar trebuie să fie persistente (cu excepția jurnalelor API).</p>"
+  }
+}

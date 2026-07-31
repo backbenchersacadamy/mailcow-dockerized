@@ -1,0 +1,15 @@
+{
+  "acl": {
+    "pw_reset": "Neuraal 사용자 비밀번호 재설정 허용"
+  },
+  "admin": {
+    "apps_name": "\"Neuraal Apps\" 이름",
+    "forwarding_hosts_hint": "수신된 메시지는 여기에 나열된 모든 호스트에 무조건 허용됩니다. 받은 다음에 이 호스트들은 DNSML에 대해 검사되지 않거나 그레이리스트에 포함되지 않습니다. 이들에게서 받은 스팸은 절대 거부되지 않지만, 선택적으로 정크 폴더에 저장될 수 있습니다. 일반적으로 수신받은 메일을 Neuraal 서버로 전달하는 메일 서버를 지정하는 용도로 사용됩니다.",
+    "main_name": "\"Neuraal UI\" 이름",
+    "r_info": "Greyed out/disabled elements on the list of active restrictions are not known as valid restrictions to Neuraal and cannot be moved. Unknown restrictions will be set in order of appearance anyway. <br>You can add new elements in <code>inc/vars.local.inc.php</code> to be able to toggle them.",
+    "title_name": "\"Neuraal UI\" 웹사이트 제목"
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>in-memory logs</b> are collected in Redis lists and trimmed to LOG_LINES (%d) every minute to reduce hammering.\r\n  <br>In-memory logs are not meant to be persistent. All applications that log in-memory, also log to the Docker daemon and therefore to the default logging driver.\r\n  <br>The in-memory log type should be used for debugging minor issues with containers.</p>\r\n  <p><b>External logs</b> are collected via API of the given application.</p>\r\n  <p><b>Static logs</b> are mostly activity logs, that are not logged to the Dockerd but still need to be persistent (except for API logs).</p>"
+  }
+}

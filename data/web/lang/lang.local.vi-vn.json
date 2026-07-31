@@ -1,0 +1,29 @@
+{
+  "acl": {
+    "pw_reset": "Cho phép đặt lại mật khẩu người dùng Neuraal"
+  },
+  "add": {
+    "alias_address_info": "<small>Địa chỉ email đầy đủ hoặc @example.com để bắt tất cả thư cho một tên miền (phân cách bằng dấu phẩy). <b>Chỉ áp dụng cho tên miền Neuraal</b>.</small>"
+  },
+  "admin": {
+    "apps_name": "Tên \"Ứng dụng Neuraal\"",
+    "force_sso_text": "Nếu nhà cung cấp OIDC bên ngoài được cấu hình, tùy chọn này sẽ ẩn biểu mẫu đăng nhập Neuraal mặc định và chỉ hiển thị nút Đăng nhập một lần",
+    "force_sso": "Vô hiệu hóa đăng nhập Neuraal và chỉ hiển thị Đăng nhập một lần",
+    "forwarding_hosts_hint": "Tin nhắn đến được chấp nhận vô điều kiện từ bất kỳ máy chủ nào được liệt kê ở đây. Các máy chủ này sau đó không bị kiểm tra với DNSBL hoặc danh sách xám. Thư rác nhận từ chúng không bao giờ bị từ chối, nhưng có thể được chuyển vào thư mục Rác. Công dụng phổ biến nhất cho việc này là chỉ định các máy chủ thư mà bạn đã thiết lập quy tắc chuyển tiếp email đến cho máy chủ Neuraal của bạn.",
+    "iam_auth_flow_info": "Ngoài Luồng mã ủy quyền (Luồng chuẩn trong Keycloak), được sử dụng cho đăng nhập một lần, Neuraal còn hỗ trợ Luồng xác thực với thông tin xác thực trực tiếp. Luồng mật khẩu thư cố gắng xác thực thông tin người dùng bằng cách sử dụng API REST quản trị Keycloak. Neuraal lấy mật khẩu đã băm từ thuộc tính <code>mailcow_password</code>, được ánh xạ trong Keycloak.",
+    "iam_extra_permission": "Để các cài đặt sau hoạt động, ứng dụng khách Neuraal trong Keycloak cần một <code>Tài khoản dịch vụ</code> và quyền <code>xem người dùng</code>.",
+    "license_info": "Giấy phép tuy không bắt buộc nhưng giúp phát triển thêm.<br><a href=\"https://www.servercow.de/mailcow?lang=en#sal\" target=\"_blank\" alt=\"Đặt hàng SAL\">Đăng ký GUID của bạn tại đây</a> hoặc <a href=\"https://www.servercow.de/mailcow?lang=en#support\" target=\"_blank\" alt=\"Đặt hàng hỗ trợ\">mua hỗ trợ cho cài đặt Neuraal của bạn.</a>",
+    "main_name": "Tên \"Giao diện Neuraal\"",
+    "r_info": "Các phần tử bị mờ/vô hiệu hóa trong danh sách hạn chế đang hoạt động không được Neuraal công nhận là hạn chế hợp lệ và không thể di chuyển. Các hạn chế không xác định sẽ vẫn được đặt theo thứ tự xuất hiện. <br>Bạn có thể thêm phần tử mới trong <code>inc/vars.local.inc.php</code> để có thể bật/tắt chúng.",
+    "reset_password_vars": "<code>{{link}}</code> Liên kết đặt lại mật khẩu đã tạo<br><code>{{username}}</code> Tên hộp thư của người dùng yêu cầu đặt lại mật khẩu<br><code>{{username2}}</code> Tên hộp thư khôi phục<br><code>{{date}}</code> Ngày yêu cầu đặt lại mật khẩu được thực hiện<br><code>{{token_lifetime}}</code> Thời gian sống của token tính bằng phút<br><code>{{hostname}}</code> Tên máy chủ Neuraal",
+    "title_name": "Tiêu đề trang web \"Giao diện Neuraal\""
+  },
+  "debug": {
+    "log_info": "<p>Neuraal <b>nhật ký trong bộ nhớ</b> được thu thập trong danh sách Redis và được cắt giảm xuống LOG_LINES (%d) mỗi phút để giảm tải.\n<br>Nhật ký trong bộ nhớ không nhằm mục đích lưu trữ lâu dài. Tất cả các ứng dụng ghi nhật ký trong bộ nhớ cũng ghi vào Docker daemon và do đó vào trình điều khiển ghi nhật ký mặc định.r\n<br>Loại nhật ký trong bộ nhớ nên được sử dụng để gỡ lỗi các vấn đề nhỏ với các container.</p>\n<p><b>Nhật ký bên ngoài</b> được thu thập thông qua API của ứng dụng đã cho.</p>\n<p><b>Nhật ký tĩnh</b> chủ yếu là nhật ký hoạt động, không được ghi vào Dockerd nhưng vẫn cần được lưu trữ lâu dài (ngoại trừ nhật ký API).</p>"
+  },
+  "edit": {
+    "domain_footer_info_vars": {
+      "from_name": "{= from_name =}   - Tên từ phong bì, ví dụ \"Neuraal &lt;moo@mailcow.tld&gt;\" sẽ trả về \"Neuraal\""
+    }
+  }
+}

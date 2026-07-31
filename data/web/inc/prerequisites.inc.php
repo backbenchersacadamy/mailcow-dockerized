@@ -273,6 +273,14 @@ if(file_exists($langFile)) {
   $lang = array_merge_real($lang, json_decode(file_get_contents($langFile), true));
 }
 
+// Neuraal branding overlays - see helper-scripts/neuraal-branding/
+foreach (array('en-gb', $_SESSION['mailcow_locale']) as $localOverlayLocale) {
+  $localLangFile = $_SERVER['DOCUMENT_ROOT'] . '/lang/lang.local.'.$localOverlayLocale.'.json';
+  if (file_exists($localLangFile)) {
+    $lang = array_merge_real($lang, json_decode(file_get_contents($localLangFile), true));
+  }
+}
+
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/functions.acl.inc.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/functions.address_rewriting.inc.php';
